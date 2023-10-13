@@ -1,8 +1,11 @@
+// Arreglo: Usamos for normal (for (let i =0; ....), o for of)
+// Objetos: Usamos Object.keys o for in
+
 function pluck(list, propertyName) {
   const results = [];
   for (const item of list) {
-    const value = item[propertyName];
-    results.push(value);
+    const result = item[propertyName];
+    results.push(result);
   }
   return results;
 }
